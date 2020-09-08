@@ -4,6 +4,7 @@ import { Button } from '@material-ui/core';
 import { auth, provider } from './firebase';
 import { actionTypes } from './reducer';
 import { useStateValue } from './StateProvider';
+import { Instagram } from '@material-ui/icons';
 
 
 function Login() {
@@ -23,14 +24,12 @@ function Login() {
     
     return (
         <div className="login">
+            <Instagram/>
+            <h1>Login in through Google</h1>
             <div className="login__container">
-                <h1>Login</h1>
+                
+                <Button  onClick={signIn}>Google sign in</Button>
             </div>
-            <div className="login__text">
-                <h1>Logging in..</h1>
-            </div>
-
-            <Button  onClick={signIn}>Google sign in</Button>
         </div>
     );
 }

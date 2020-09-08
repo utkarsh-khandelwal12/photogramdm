@@ -1,0 +1,21 @@
+
+.login__container>button{
+    margin-top: 10px;
+    background-color: rgb(164, 255, 164);
+    align-items: center;
+    margin-left: 50px;
+}
+
+.login__containerin>button:hover{
+    background-color: lightgreen;
+}
+
+.login{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.login>h1{
+    margin-left: 10px;
+}
